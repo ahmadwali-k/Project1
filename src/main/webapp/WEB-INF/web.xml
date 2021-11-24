@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/j2ee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
+         version="2.4">
+
+
+  <servlet>
+    <servlet-name>App</servlet-name>
+    <servlet-class>App</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>App</servlet-name>
+    <url-pattern>/app</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RegisterEmployee</servlet-name>
+    <servlet-class>RegisterEmployee</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RegisterEmployee</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RegServlet</servlet-name>
+    <servlet-class>org.example.RegServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RegServlet</servlet-name>
+    <url-pattern>/RegServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Refund</servlet-name>
+    <servlet-class>org.example.Refund</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Refund</servlet-name>
+    <url-pattern>/Refund</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LoginEmployee</servlet-name>
+    <servlet-class>org.example.LoginEmployee</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginEmployee</servlet-name>
+    <url-pattern>/LoginEmployee</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RefundDao</servlet-name>
+    <servlet-class>org.example.RefundDao</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RefundDao</servlet-name>
+    <url-pattern>/RefundDao</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>RefundImpl</servlet-name>
+    <servlet-class>org.example.RefundImpl</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RefundImpl</servlet-name>
+    <url-pattern>/RefundImpl</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>Transactions</servlet-name>
+    <servlet-class>org.example.Transactions</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>Transactions</servlet-name>
+    <url-pattern>/Transactions</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>TransactionUpdate</servlet-name>
+    <servlet-class>org.example.TransactionUpdate</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>TransactionUpdate</servlet-name>
+    <url-pattern>/TransactionUpdate</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>GetEmployee</servlet-name>
+    <servlet-class>org.example.GetEmployee</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>GetEmployee</servlet-name>
+    <url-pattern>/GetEmployee</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LoginAdmin</servlet-name>
+    <servlet-class>org.example.LoginAdmin</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginAdmin</servlet-name>
+    <url-pattern>/LoginAdmin</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>EmployeeDAO</servlet-name>
+    <servlet-class>EmployeeDAO</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>EmployeeDAO</servlet-name>
+    <url-pattern>/dao</url-pattern>
+  </servlet-mapping>
+
+</web-app>

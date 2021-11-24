@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="ISO-8859-1">
+  <title>
+    Insert title here
+  </title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn"
+        crossorigin="anonymous">
+  <style>
+        body {
+            background-color: #ccc;
+        }
+        .wrapper{
+            background-color: #fff;
+            padding: 20px;
+            box-sizing: border-box;
+            margin: auto;
+            border-radius: 7px
+        }
+
+    </style>
+
+  <nav class="nav nav-pills flex-column flex-sm-row">
+    <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="index.html">Home</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="guide.html">Guide</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="ContactInfo.html">Contact Info</a>
+
+  </nav>
+</head>
+<body style="background-color:LightBlue;">
+<div class="container">
+  <form action="LoginAdmin" method="post" >
+    <h1> Admin Login</h1>
+    <div class="row">
+    <div class="col-lg-3"></div>
+    <div class="col-lg-6">
+      <div class="wrapper">
+
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" name="username" />
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <input type="password" class="form-control" name="password" />
+          </div>
+          <input type="submit" class="btn btn-primary btn-block" value="Login" />
+
+      </div>
+    </div>
+    <div class="col-lg-3"></div>
+  </div>
+  </form>
+</div>
+</body>
+</html>

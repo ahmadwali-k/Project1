@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="ISO-8859-1">
+  <title>Title</title>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+  <nav class="nav nav-pills flex-column flex-sm-row">
+    <a class="flex-sm-fill text-sm-center nav-link active" aria-current="page" href="index.html">Home</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="ContactInfo.html">Contact Info</a>
+    <a class="flex-sm-fill text-sm-center nav-link" href="logout.html">Logout</a>
+  </nav>
+
+</head>
+<body style="background-color:LightBlue;">
+<div class="container">
+  <form action="Refund" method="post">
+    <h1> Apply for refund</h1>
+
+    <form class="row g-3">
+      <div class="col-md-4">
+        <label for="validationDefault00" class="form-label">Ticket No</label>
+        <input type="text" name="ticket" class="form-control" id="validationDefault0" value="" required>
+      </div>
+    <form class="row g-3">
+      <div class="col-md-4">
+        <label for="validationDefault00" class="form-label">Amount</label>
+        <input type="text" name="amount" class="form-control" id="validationDefault00" value="" required>
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault01" class="form-label">Reason</label>
+        <input type="text" name="reason" class="form-control" id="validationDefault01" value="" required>
+      </div>
+      <div class="col-md-4">
+        <label for="validationDefault02" class="form-label">Description</label>
+        <input type="text" name="description" class="form-control" id="validationDefault02" value="" required>
+      </div>
+
+      <div class="col-12">
+        <button style="margin:10px" class="btn btn-primary" type="submit">Submit Request</button>
+      </div>
+    </form>
+
+
+  </form>
+  </form>
+</div>
+</body>
+</html>
