@@ -1,6 +1,5 @@
 package org.example;
 
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -17,19 +16,6 @@ import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
-
-/**
- * NaveBar
- *  - Home, Employe, Admin, Contact
- * Login (in demo)
- *  - apply for reimbusement
- *  - view past Tickets(approved/deny/pending)
- *  - Update request (cancel)
- *  - view request table
- * Registration
- *  - get info (save)
- *  - links to signIn page, home
- */
 
 public class RefundDao {
     private static RefundDao dao1 = null;
@@ -49,13 +35,6 @@ public class RefundDao {
         }
         return dao1;
     }
-
-    // TODO: 11/19/2021 navbar
-
-    // TODO: 11/19/2021 login
-
-
-    // TODO: 11/19/2021 registration
 
     public RefundImpl getRefund(int tc_NO) {
         // fetching data from the database.

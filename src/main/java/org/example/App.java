@@ -1,3 +1,10 @@
+/**
+ * Name: Ahmadwali Zadron
+ * Task: Project1 (Expense Reimbusement System)
+ * Date: 11/25/21
+ * Company: Revature
+ */
+
 package org.example;
 
 import org.hibernate.Session;

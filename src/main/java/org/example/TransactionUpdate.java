@@ -54,27 +54,7 @@ public class TransactionUpdate extends HttpServlet {
         refund1.setStatus(status);
 
         dao1.saveRefund(refund1);
-        //out.println(dao3.getStatus(Integer.parseInt(ticket)));
-        // refund1 = getTc_No(ticket);
-
-        //dao1.statusChange(Integer.parseInt(ticket), status);
-
-        //dao1.saveRefund(refund1);
-        //refund1.setTc_No(Integer.parseInt(ticket));
-        //refund1.setStatus(status);
-
-        //dao1.updateRefund(refund1);
-
-        //out.println(dao1.getRefund(Integer.parseInt(ticket)));
-        //out.println(dao1.getRefunds());
 
 
-        // dao1.getRefund(Integer.parseInt(ticket));
-        //out.println("-----------------------" + dao1.getRefund(Integer.parseInt(ticket)) + "-----------------------");
-        //out.println("------------------------All others Requests------------------------");
-        /*List<RefundImpl> RefundImpl = dao1.getRefunds();
-        for (RefundImpl refund : RefundImpl) {
-            out.println(refund);
-        }*/
     }
 }

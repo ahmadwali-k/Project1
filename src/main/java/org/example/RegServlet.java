@@ -77,17 +77,5 @@ public class RegServlet extends HttpServlet {
         dao.saveEmployee(employee);
         //dao.getEmployees();
 
-        /*List<Employee> Employees = dao.getEmployees();
-        for (Employee employee1 : Employees) {
-            System.out.print(employee1);
-        }*/
-        //dao.getEmployees();
-
-        // RequestDispatcher rd = request.getRequestDispatcher("EmployeeDAO");
-        //rd.forward(request, response);
-        //response.sendRedirect("EmployeeDAO");
-
-
-
     }
 }
