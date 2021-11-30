@@ -14,18 +14,6 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 import java.util.List;
 
-/**
- * NaveBar
- *  - Home, Employe, Admin, Contact
- * Login (in demo)
- *  - apply for reimbusement
- *  - view past Tickets(approved/deny/pending)
- *  - Update request (cancel)
- *  - view request table
- * Registration
- *  - get info (save)
- *  - links to signIn page, home
- */
 
 public class EmployeeDAO {
     private static EmployeeDAO dao = null;
@@ -46,12 +34,6 @@ public class EmployeeDAO {
         return dao;
     }
 
-    // TODO: 11/19/2021 navbar 
-
-    // TODO: 11/19/2021 login 
-
-
-    // TODO: 11/19/2021 registration 
     
     public Employee getEmployee(int id) {
         // fetching data from the database.

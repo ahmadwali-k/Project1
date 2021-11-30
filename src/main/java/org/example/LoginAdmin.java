@@ -19,7 +19,7 @@ public class LoginAdmin extends HttpServlet {
         String username = request.getParameter("username");
         String password = request.getParameter("password");
 
-        if (username.equals("sherlock") && password.equals("123")) {
+        if (username.equals("admin") && password.equals("123")) {
             RequestDispatcher rd = request.getRequestDispatcher("/loginadmin.html");
             rd.forward(request, response);
 

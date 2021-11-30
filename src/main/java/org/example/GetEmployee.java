@@ -26,9 +26,9 @@ public class GetEmployee extends HttpServlet {
 
         // dao1.getRefund(Integer.parseInt(ticket));
 
-        out.println("-----------------------" + dao.getEmployee(Integer.parseInt(id)) + "-----------------------");
+        out.println( dao.getEmployee(Integer.parseInt(id)));
 
-        out.println("------------------------All others Requests------------------------");
+        out.println("------------------------All others Employees------------------------");
         List<Employee> Employee = dao.getEmployees();
         for (Employee employee1 : Employee) {
             out.println(employee1);

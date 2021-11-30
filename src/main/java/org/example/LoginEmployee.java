@@ -16,19 +16,29 @@ public class LoginEmployee extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
 
-        String username = request.getParameter("username");
+        String fname = request.getParameter("fname");
         String password = request.getParameter("password");
 
-        if (username.equals("nick") && password.equals("string1")) {
-            out.println("login in Successful");
+
+        //EmployeeDAO dao = EmployeeDAO.getEmployeeDAO();
+       // Employee employee = new Employee();
+
+        //employee.setFname(fname);
+        //employee.setPassword(password);
+
+        //out.println(dao.getEmployee(Integer.parseInt(fname)));
+        //refund1.setFname(fname);
+
+       // if (fname.equals("nick") && password.equals("string1")) {
+          //  out.println("login in Successful");
             RequestDispatcher rd = request.getRequestDispatcher("/refund.html");
             rd.forward(request, response);
 
-        } else {
-            out.println("Invalid Credentials");
-            RequestDispatcher rd = request.getRequestDispatcher("/emplogin.html");
-            rd.include(request, response);
-        }
+       // } else {
+       //     out.println("Invalid Credentials");
+       //     RequestDispatcher rd = request.getRequestDispatcher("/emplogin.html");
+       //     rd.include(request, response);
+        //}
     }
 }
 

@@ -96,6 +96,16 @@
   </servlet-mapping>
 
   <servlet>
+    <servlet-name>DeleteRequest</servlet-name>
+    <servlet-class>org.example.DeleteRequest</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>DeleteRequest</servlet-name>
+    <url-pattern>/DeleteRequest</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
     <servlet-name>GetEmployee</servlet-name>
     <servlet-class>org.example.GetEmployee</servlet-class>
   </servlet>
@@ -123,5 +133,7 @@
     <servlet-name>EmployeeDAO</servlet-name>
     <url-pattern>/dao</url-pattern>
   </servlet-mapping>
+
+
 
 </web-app>

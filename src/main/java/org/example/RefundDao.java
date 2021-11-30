@@ -6,9 +6,11 @@ import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
 
+import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
+import javax.persistence.criteria.CriteriaUpdate;
 import javax.persistence.criteria.Root;
 import java.io.Serializable;
 import java.sql.Connection;
@@ -106,14 +108,32 @@ public class RefundDao {
         session.close();
     }
 
-    /*public void deleteEmployee(String fname) {
+    public void deleteRefund(int tc_No) {
         Session session = factory.openSession();
         Transaction transaction = session.beginTransaction();
-        Employee employee = getEmployee(fname);
 
-        session.delete(employee);
+        RefundImpl refund1 = getRefund(tc_No);
+        session.delete(refund1);
 
         transaction.commit();
         session.close();
-    }*/
+    }
+    public void statusChange(int tc, String status) {
+        Session session = factory.openSession();
+        Transaction transaction = session.beginTransaction();
+        RefundImpl refund = (RefundImpl) session.get(RefundImpl.class, tc);
+        refund.setTc_No(tc);
+        refund.setStatus(status);
+
+        session.update(refund);
+        //refund.getDescription();
+        //session.update(refund);
+        //session.addEventListeners();
+        //session.update(refund.getStatus());
+
+        transaction.commit();
+        session.close();
+    }
+
+
 }

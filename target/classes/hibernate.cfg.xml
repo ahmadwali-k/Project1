@@ -14,5 +14,6 @@
         <property name="show_sql">true</property>
         <mapping class="org.example.Employee" />
         <mapping class="org.example.RefundImpl" />
+
     </session-factory>
 </hibernate-configuration>

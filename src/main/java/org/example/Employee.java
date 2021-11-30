@@ -94,15 +94,40 @@ public class Employee {
 
     @Override
     public String toString() {
-        return "Employee{" +
-                "id=" + id +
-                ",\n\t password='" + password + '\'' +
-                ",\n\t firstName='" + fname + '\'' +
-                ",\n\t lastName='" + lname + '\'' +
-                ",\n\t role=" + role + '\'' +
-                ",\n\t phone=" + phone + '\'' +
-                ",\n\t address=" + addr + '\'' +
-                "\n}";
+        return (
+                "<!DOCTYPE html>\n" +
+                        "<html>\n" +
+                        "<head>\n" +
+                        "    <title> Employee </title>\n" +
+                        " <link rel=\"stylesheet\" href=\"https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css\"\n" +
+                        "          integrity=\"sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn\" crossorigin=\"anonymous\">\n" +
+                        "</head>\n" +
+                        "<body style= background-color:LightBlue;>\n" +
+                        //"<h1> Employ </h1>\n" +
+                        "<table border='1'>\n" +
+                        "    <tr>\n" +
+                        "        <th> ID </th>\n" +
+                        "        <th> First Name </th>\n" +
+                        "        <th> Last Name </th>\n" +
+                        "        <th> Phone Number </th>\n" +
+                        "        <th> Role </th>\n" +
+                        "        <th> Address (city) </th>\n" +
+                        "        <th> Password </th>\n" +
+                        "        </tr>\n" +
+                        "    <tr>\n" +
+                        "        <th>\"" + id + "\"</th>\n" +
+                        "        <th>\"" + fname + "\"</th>\n" +
+                        "        <th> \"" + lname + "\" </th>\n" +
+                        "        <th> \"" + phone + "\" </th>\n" +
+                        "        <th> \"" + role + "\" </th>\n" +
+                        "        <th> \"" + addr + "\" </th>\n" +
+                        "        <th> \"" + password + "\" </th>\n" +
+                        "    </tr>\n" +
+                        "</table>\n" +
+                        "</body>\n" +
+                        "</html>");
+
+
     }
 }
 

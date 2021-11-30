@@ -23,7 +23,7 @@ public class Refund extends HttpServlet {
         out.println("<head>");
         out.println("<title> Employee </title");
         out.println("</head>");
-        out.println("<body>");
+        out.println("<body style=background-color:LightBlue;>");
         out.println("<h1> Request </h1>");
         out.println("<table border='1'>");
         out.println("<tr>");
